@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SharedMap</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_creation_compte">CreationCompteActivity</string>
+    <string name="title_activity_saisie_numero_tel">Numéro de téléphone</string>
+    <string name="title_activity_verif_code_sms">Vérification du code SMS</string>
+    <string name="title_activity_creation_compte_mail_pseudo">Création du compte</string>
+    <string name="title_activity_display_events">Vos groupes</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_settings">Paramètres</string>
+    <string name="title_activity_event_search">Recherche d\'événement</string>
+    <string name="title_activity_home">Accueil</string>
+    <string name="title_activity_map_add_marker_dialog">MapAddMarkerDialog</string>
+    <string name="title_activity_creation_group_begin">Création d\'un groupe</string>
+    <string name="title_activity_edition_group_begin">Edition d\'un groupe</string>
+    <string name="title_activity_creation_group_end">Création d\'un groupe</string>
+    <string name="title_activity_edition_group_end">Edition d\'un groupe</string>
+
+</resources>

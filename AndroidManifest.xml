@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sharedmapclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_GPS" />	
+	<uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />	
+	<uses-permission android:name="android.permission.LOCATION" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:name="com.sharedmapclient.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.sharedmapclient.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.sharedmapclient.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.SaisieNumeroTelActivity"
+            android:label="@string/title_activity_saisie_numero_tel" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.VerifCodeSmsActivity"
+            android:label="@string/title_activity_verif_code_sms" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.CreationCompteMailPseudoActivity"
+            android:label="@string/title_activity_creation_compte_mail_pseudo" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.GroupListActivity"
+            android:label="@string/title_activity_display_events" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.GroupSearchActivity"
+            android:label="@string/title_activity_event_search" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+		<meta-data
+		        android:name="com.google.android.gms.version"
+		        android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDa5Zoir_wAvdEy8WgDLps9RJyTXz7VcXQ" />
+
+        <activity
+            android:name="com.sharedmapclient.MapAddMarkerDialog"
+            android:label="@string/title_activity_map_add_marker_dialog" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.GroupCreationBeginActivity"
+            android:label="@string/title_activity_creation_group_begin" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.GroupEditionActivity"
+            android:label="@string/title_activity_edition_group_begin" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.GroupCreationEndActivity"
+            android:label="@string/title_activity_creation_group_end" >
+        </activity>
+        <activity
+            android:name="com.sharedmapclient.EditionGroupEndActivity"
+            android:label="@string/title_activity_edition_group_end" >
+        </activity>
+        
+        <receiver
+            android:name="com.sharedmapclient.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.sharedmapclient" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sharedmapclient.GcmIntentService"/>
+        
+        <receiver android:name="com.sharedmapclient.BootCompleted" android:enabled="true" android:exported="false">
+	       <intent-filter>
+	          <action android:name="android.intent.action.BOOT_COMPLETED"/>
+	       </intent-filter>
+    	</receiver> 
+    	<service android:name="com.sharedmapclient.LocationService"/>
+    </application>
+
+</manifest>

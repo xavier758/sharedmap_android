@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MapActivity" >
+
+    <EditText 
+        android:id="@+id/editSearchLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btnSearchLocation"
+        android:textColor="#FFFFFF"
+        android:hint="Lieu ..."/>
+    
+    <Button 
+        android:id="@+id/btnSearchLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFFFFF"
+        android:text="Go" />
+    
+    <Button
+        android:id="@+id/btnSearchSomeone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSearchLocation"
+        android:textColor="#FFFFFF"
+        android:text="Localiser un ami" />
+    
+    <fragment 
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSearchSomeone"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>

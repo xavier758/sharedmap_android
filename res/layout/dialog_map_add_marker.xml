@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+    
+    <TextView
+        android:id="@+id/txtMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Nouveau marqueur. Entrez une description." />
+    
+    <EditText
+        android:id="@+id/editTxtMarker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMarker"
+        android:hint="Description ..." />
+    
+    <TextView
+        android:id="@+id/txtInfoDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxtMarker"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:text="Visibilité:" />
+    
+    <TextView 
+        android:id="@+id/txtDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInfoDuration"
+        android:layout_alignBaseline="@+id/btnDurationLess"
+        android:layout_centerHorizontal="true" />
+    
+    <ImageView
+        android:id="@+id/btnDurationLess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_below="@+id/txtInfoDuration"
+    	android:layout_alignParentLeft="true" />
+    
+    <ImageView
+        android:id="@+id/btnDurationMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_below="@+id/txtInfoDuration"
+    	android:layout_alignParentRight="true" />
+    
+</RelativeLayout>

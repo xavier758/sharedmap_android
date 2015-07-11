@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GroupSearchActivity"
+    android:background="#8CB9B2" >
+    
+    <ImageView
+        android:id="@+id/titleBgd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_notif_1" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/titleBgd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFFFF" 
+    	android:textStyle="bold"
+    	android:text="Rechercher un Groupe :" />
+    
+    <TextView
+        android:id="@+id/txtSearchEvent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBgd"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:text="#" />
+
+    <EditText
+        android:id="@+id/editTxtSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtSearchEvent2"
+        android:layout_toLeftOf="@+id/btnSearchEvent"
+        android:layout_alignBaseline="@+id/txtSearchEvent2"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:id="@+id/btnSearchEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/txtSearchEvent2"
+        android:background="#27777E" />
+    
+    <TextView
+        android:id="@+id/hashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSearchEvent2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#F05B4F"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hashtag"
+        android:layout_alignLeft="@+id/hashtag"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/participant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_alignLeft="@+id/hashtag"
+        android:layout_marginBottom="15dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic" />
+	
+	<EditText 
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:ems="10"
+        android:textColor="#000000" />
+    
+    <ImageView
+        android:id="@+id/btnJoinEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/btn_01_selector" />
+    
+    <TextView
+        android:id="@+id/txtJoinGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnJoinEvent"
+        android:layout_alignTop="@+id/btnJoinEvent"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Rejoindre" />
+        
+    <TextView 
+        android:id="@+id/txtAskJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnJoinEvent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:text="Vous n'avez pas le mdp ?"/>
+
+    <ImageView
+        android:id="@+id/btnAskJoin"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAskJoin"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_01_selector" />
+    
+    <TextView
+        android:id="@+id/txtBtnAskJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAskJoin"
+        android:layout_alignTop="@+id/btnAskJoin"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Demander à rejoindre" />
+    
+    <TextView 
+        android:id="@+id/txtEventNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSearchEvent2"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="Aucun groupe correspondant à ce hashtag n'a été trouvé."/>
+    
+    <TextView
+        android:id="@+id/txtEventAlreadyJoined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

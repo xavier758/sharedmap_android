@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#713E2B" >
+    
+    <ImageView
+        android:id="@+id/group_elt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_elt_5"
+        android:background="#FF8CB9B2"
+        android:src="@drawable/group_elt_1" />
+    
+    <ImageView
+        android:id="@+id/group_elt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF8CB9B2"
+        android:src="@drawable/group_elt_2" />
+    
+    <ImageView
+        android:id="@+id/group_elt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FF8CB9B2"
+        android:src="@drawable/group_elt_3" />
+    
+    <ImageView
+        android:id="@+id/group_elt_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_elt_5"
+        android:layout_alignParentRight="true"
+        android:background="#FF8CB9B2"
+        android:src="@drawable/group_elt_4" />
+
+    <ImageView
+        android:id="@+id/group_elt_5"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:background="#FF8CB9B2"
+        android:src="@drawable/group_elt_5" />
+    
+    <ImageView
+        android:id="@+id/eventLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/group_elt_1"
+        android:layout_alignTop="@+id/group_elt_1" />
+    
+    <ImageView
+        android:id="@+id/hashtagBgd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/eventLogo"
+        android:layout_alignBottom="@+id/crown"
+        android:scaleType="fitXY"
+        android:src="@drawable/group_elt_title" />
+    
+    <ImageView
+        android:id="@+id/crown"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/hashtagBgd"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/crown_white" />
+
+    <TextView
+        android:id="@+id/hashSymbole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hashtagBgd"
+        android:layout_alignBottom="@+id/hashtagBgd"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="#" />
+    
+    <TextView
+        android:id="@+id/hashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hashSymbole"
+        android:layout_alignBottom="@+id/hashSymbole"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/eventLogo"
+        android:layout_toLeftOf="@+id/imgMapAccess"
+        android:layout_below="@+id/hashtagBgd"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/participant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desc"
+        android:layout_below="@+id/desc"
+        android:layout_marginBottom="7dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imgMapAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hashtagBgd"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000"
+        android:src="@drawable/btn_map_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CB9B2"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp" >
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/sharedmap_logo"/>
+    
+    <ImageView
+        android:id="@+id/btnGroupAccess"
+        android:layout_below="@+id/banner"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_group_selector" />
+    
+    <ImageView
+        android:id="@+id/homeNotif1"
+        android:layout_below="@+id/btnGroupAccess"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_notif_1" />
+    
+   
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnGroupAccess"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="GROUPES >>" />
+    
+    <TextView
+        android:id="@+id/titleNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/homeNotif1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFFFF" 
+    	android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/txtNoNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/homeNotif1"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFF"
+        android:text="Aucune nouvelle activité." />
+    
+    <ListView 
+        android:id="@+id/listNotif"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeNotif1" >
+    </ListView>
+
+</RelativeLayout>

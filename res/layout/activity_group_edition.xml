@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#8CB9B2" >
+
+    <ImageView
+        android:id="@+id/titleBgd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_notif_1" />
+    
+    <TextView
+        android:id="@+id/titleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/titleBgd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFFFF" 
+    	android:textStyle="bold" />
+    
+    <RelativeLayout
+        android:id="@+id/layoutMembers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBgd"
+        android:layout_marginTop="20dp"
+        android:background="#713E2B" >
+        
+        <ImageView
+	        android:id="@+id/members_elt_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="#FF8CB9B2"
+	        android:src="@drawable/group_elt_1" />
+    
+	    <ImageView
+	        android:id="@+id/members_elt_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/btnInvite"
+	        android:background="#FF8CB9B2"
+	        android:src="@drawable/group_elt_2" />
+	    
+	    <ImageView
+	        android:id="@+id/members_elt_3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/btnInvite"
+	        android:background="#FF8CB9B2"
+	        android:src="@drawable/group_elt_3" />
+	    
+	    <ImageView
+	        android:id="@+id/members_elt_4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:background="#FF8CB9B2"
+	        android:src="@drawable/group_elt_4" />
+        
+        <TextView
+            android:id="@+id/txtMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/members_elt_1"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="MEMBRES" />
+        
+        <ImageView
+	        android:id="@+id/btnInvite"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtMembers"
+	        android:layout_toRightOf="@+id/members_elt_2"
+	        android:src="@drawable/btn_01_selector" />
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/btnInvite"
+	        android:layout_alignTop="@+id/btnInvite"
+	        android:layout_margin="10dp"
+	        android:textColor="#FFFFFF"
+	        android:text="Inviter" />
+        
+        <ImageView
+	        android:id="@+id/btnFireMembers"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtMembers"
+	        android:layout_toRightOf="@+id/btnInvite"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/btn_01_selector" />
+        
+        <TextView
+            android:id="@+id/txtBtnFire"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/btnFireMembers"
+	        android:layout_alignTop="@+id/btnFireMembers"
+	        android:layout_margin="10dp"
+	        android:textColor="#FFFFFF"
+	        android:text="Retirer" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layoutGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutMembers"
+        android:layout_marginTop="20dp"
+        android:background="#713E2B" >
+        
+         <ImageView
+	        android:id="@+id/group_elt_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="#FF8CB9B2"
+	        android:src="@drawable/group_elt_1" />
+    
+	    <ImageView
+	        android:id="@+id/group_elt_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/btnValidate"
+	        android:background="#FF8CB9B2"
+	        android:src="@drawable/group_elt_2" />
+	    
+	    <ImageView
+	        android:id="@+id/group_elt_3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/btnValidate"
+	        android:background="#FF8CB9B2"
+	        android:src="@drawable/group_elt_3" />
+	    
+	    <ImageView
+	        android:id="@+id/group_elt_4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:background="#FF8CB9B2"
+	        android:src="@drawable/group_elt_4" />
+        
+        <TextView
+            android:id="@+id/txtGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/group_elt_1"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="GROUPE" />
+        
+        <ImageView
+	        android:id="@+id/btnQuit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtGroup"
+	       	android:layout_toRightOf="@+id/group_elt_1"
+	        android:src="@drawable/btn_01_selector" />
+        
+        <TextView
+            android:id="@+id/txtBtnQuit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/btnQuit"
+	        android:layout_alignTop="@+id/btnQuit"
+	        android:layout_margin="10dp"
+	        android:textColor="#FFFFFF" />
+        
+        <TextView
+	        android:id="@+id/txtDesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/btnQuit"
+	        android:layout_toRightOf="@+id/group_elt_1"
+	        android:layout_marginTop="10dp"
+	        android:text="Description"
+	        android:textStyle="bold"
+	        android:textColor="#FFFFFF" />
+
+	    <EditText
+	        android:id="@+id/editDesc"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtDesc"
+	        android:layout_toRightOf="@+id/group_elt_1"
+	        android:layout_toLeftOf="@+id/group_elt_4"
+	        android:inputType="textMultiLine"
+	        android:textColor="#FFFFFF" />
+	    
+	    <TextView
+	        android:id="@+id/txtPassword"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/editDesc"
+	        android:layout_toRightOf="@+id/group_elt_1"
+	        android:layout_marginTop="10dp"
+	        android:text="Nouveau mot de passe"
+	        android:textStyle="bold"
+	        android:textColor="#FFFFFF" />
+	    
+	    <EditText
+	        android:id="@+id/editPassword"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtPassword"
+	        android:layout_toRightOf="@+id/group_elt_1"
+	        android:layout_toLeftOf="@+id/group_elt_4"
+	        android:textColor="#FFFFFF" />
+	    
+	    <ImageView
+	        android:id="@+id/btnValidate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/editPassword"
+	        android:layout_marginTop="10dp"
+	        android:layout_toLeftOf="@+id/group_elt_4"
+	        android:src="@drawable/btn_01_selector" />
+        
+        <TextView
+            android:id="@+id/txtBtnValidate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/btnValidate"
+	        android:layout_alignTop="@+id/btnValidate"
+	        android:layout_margin="10dp"
+	        android:textColor="#FFFFFF"
+	        android:text="Modifier" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>
