@@ -1,4 +1,4 @@
-# sharedmap_serveur
+# sharedmap_android
 
 SharedMap enables you to track your friends from your contact book on your android smartphone, and see where they are real-time. 
 
